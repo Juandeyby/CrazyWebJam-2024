@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 public class MainMovementPlayer : MonoBehaviour
 {
-    [SerializeField] private float _speed = 5f;
-    [SerializeField] private float _rotationSpeed = 750f;
-    [SerializeField] private LayerMask _groundLayer;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float rotationSpeed = 750f;
+    [SerializeField] private LayerMask groundLayer;
     private Rigidbody _rb;
     private NavMeshAgent _navMeshAgent;
     private Vector3 _movementInput;
@@ -54,7 +55,7 @@ public class MainMovementPlayer : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             var ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out var hit, Mathf.Infinity, _groundLayer))
+            if (Physics.Raycast(ray, out var hit, Mathf.Infinity, groundLayer))
             {
                 var targetPosition = hit.point;
                 _navMeshAgent.SetDestination(targetPosition);
@@ -65,7 +66,7 @@ public class MainMovementPlayer : MonoBehaviour
     private void FixedUpdate()
     {
 //        _rb.angularVelocity = _movementInput * speed;
-        _rb.linearVelocity = _movementInput * _speed;
+        _rb.linearVelocity = _movementInput * speed;
     }
     
     private void RotateMovementToCamera()
@@ -83,7 +84,7 @@ public class MainMovementPlayer : MonoBehaviour
         {
             var targetRotation = Quaternion.LookRotation(targetDirection);
 
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _rotationSpeed * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
     }
  

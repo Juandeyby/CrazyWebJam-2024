@@ -5,35 +5,45 @@ using UnityEngine.UI;
 public class TamagotchiView : MonoBehaviour, ITamagotchiView
 {
     ITamagotchiPresenter _tamagotchiPresenter;
+    SaveSystem _saveSystem;
     
-    [SerializeField] private Image _hungerBar;
+    [SerializeField] private Image _satietyBar;
     [SerializeField] private Image _happinessBar;
+    [SerializeField] private Image _energyBar;
+    [SerializeField] private Image _hygieneBar;
     
-    private void Start()
+    public void SetPresenter(ITamagotchiPresenter presenter)
     {
-        _tamagotchiPresenter = new TamagotchiPresenter(this);
-        _tamagotchiPresenter.UpdateView();
+        _tamagotchiPresenter = presenter;
     }
 
-    public void UpdateHunger(int hunger)
+    #region <<Events trigger presenter methods>>
+    public void UpdateSatiety(float amount)
     {
-        _hungerBar.fillAmount = hunger / 100f;
+        _satietyBar.fillAmount = amount / 100f;
     }
 
-    public void UpdateHappiness(int happiness)
+    public void UpdateHappiness(float happiness)
     {
         _happinessBar.fillAmount = happiness / 100f;
     }
 
-    public void UpdateEnergy(int energy)
+    public void UpdateEnergy(float energy)
     {
-        throw new NotImplementedException();
+        _energyBar.fillAmount = energy / 100f;
     }
 
-    public void UpdateHygiene(int hygiene)
+    public void UpdateHygiene(float hygiene)
     {
-        throw new NotImplementedException();
+        _hygieneBar.fillAmount = hygiene / 100f;
     }
+    #endregion
+
+    #region <<View methods trigger calls them>>
+
+    
+    
+    #endregion
 
     private void Update()
     {

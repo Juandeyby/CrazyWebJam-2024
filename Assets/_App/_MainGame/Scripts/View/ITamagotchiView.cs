@@ -2,8 +2,8 @@ using UnityEngine;
 
 public interface ITamagotchiView
 {
-   void UpdateHunger(int hunger);
-   void UpdateHappiness(int happiness);
-   void UpdateEnergy(int energy);
-   void UpdateHygiene(int hygiene);
+   void UpdateSatiety(float satiety);
+   void UpdateHappiness(float happiness);
+   void UpdateEnergy(float energy);
+   void UpdateHygiene(float hygiene);
 }

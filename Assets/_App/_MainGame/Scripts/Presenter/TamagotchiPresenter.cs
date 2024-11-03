@@ -4,42 +4,102 @@ public class TamagotchiPresenter : ITamagotchiPresenter
 {
     private TamagotchiModel _tamagotchiModel;
     private ITamagotchiView _tamagotchiView;
+    private SaveSystem _saveSystem;
     
-    public TamagotchiPresenter(ITamagotchiView tamagotchiView)
+    public TamagotchiPresenter(SaveSystem saveSystem, ITamagotchiView tamagotchiView, TamagotchiModel tamagotchiModel)
     {
-        _tamagotchiModel = new TamagotchiModel();
+        _tamagotchiModel = tamagotchiModel;
+        _saveSystem = saveSystem;
         _tamagotchiView = tamagotchiView;
+        
+        TimerService.Instance.OnTimePerSecond += UpdateAttributes;
     }
     
-    public void UpdateView()
+    private void UpdateAttributes()
     {
-        _tamagotchiView.UpdateHunger(_tamagotchiModel.Hunger);
+        UpdateSatiety(0.01f);
+        UpdateHappiness(0.01f);
+        UpdateEnergy(0.01f);
+        UpdateHygiene(0.01f);
+        UpdateView();
+    }
+    
+    private void UpdateView()
+    {
+        _tamagotchiView.UpdateSatiety(_tamagotchiModel.Satiety);
         _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
         _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
     }
     
-    public void Feed(int amount)
+    public void Feed(float amount)
     {
-        _tamagotchiModel.Hunger += Mathf.Clamp(amount, 0, 100);
-        _tamagotchiView.UpdateHunger(_tamagotchiModel.Hunger);
+        _tamagotchiModel.Satiety += Mathf.Clamp(amount, 0, 100);
+        _saveSystem.SaveHunger(_tamagotchiModel.Satiety);
+        _tamagotchiView.UpdateSatiety(_tamagotchiModel.Satiety);
     }
 
-    public void Play(int amount)
+    public void Play(float amount)
     {
         _tamagotchiModel.Happiness += Mathf.Clamp(amount, 0, 100);
+        _saveSystem.SaveHappiness(_tamagotchiModel.Happiness);
         _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
     }
 
-    public void Sleep(int amount)
+    public void Sleep(float amount)
     {
         _tamagotchiModel.Energy += Mathf.Clamp(amount, 0, 100);
+        _saveSystem.SaveEnergy(_tamagotchiModel.Energy);
         _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
     }
 
-    public void Clean(int amount)
+    public void Clean(float amount)
     {
         _tamagotchiModel.Hygiene += Mathf.Clamp(amount, 0, 100);
+        _saveSystem.SaveHygiene(_tamagotchiModel.Hygiene);
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
+    }
+
+    public void UpdateSatiety(float satiety, int time = 1)
+    {
+        var satietyValue = _tamagotchiModel.Satiety - satiety * time;
+        _tamagotchiModel.Satiety = Mathf.Clamp(satietyValue, 0, 100);
+        _saveSystem.SaveHunger(_tamagotchiModel.Satiety);
+        _tamagotchiView.UpdateSatiety(_tamagotchiModel.Satiety);
+    }
+
+    public void UpdateHappiness(float happiness, int time = 1)
+    {
+        var happinessValue = _tamagotchiModel.Happiness - happiness * time;
+        _tamagotchiModel.Happiness = Mathf.Clamp(happinessValue, 0, 100);
+        _saveSystem.SaveHappiness(_tamagotchiModel.Happiness);
+        _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
+    }
+
+    public void UpdateEnergy(float energy, int time = 1)
+    {
+        var energyValue = _tamagotchiModel.Energy - energy * time;
+        _tamagotchiModel.Energy = Mathf.Clamp(energyValue, 0, 100);
+        _saveSystem.SaveEnergy(_tamagotchiModel.Energy);
+        _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
+    }
+
+    public void UpdateHygiene(float hygiene, int time = 1)
+    {
+        var hygieneValue = _tamagotchiModel.Hygiene - hygiene * time;
+        _tamagotchiModel.Hygiene = Mathf.Clamp(hygieneValue, 0, 100);
+        _saveSystem.SaveHygiene(_tamagotchiModel.Hygiene);
+        _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
+    }
+
+    public void Load()
+    {
+        _tamagotchiModel = _saveSystem.LoadTamagotchi();
+        UpdateView();
+    }
+    
+    public void Dispose()
+    {
+        TimerService.Instance.OnTimePerSecond -= UpdateAttributes;
     }
 }

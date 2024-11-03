@@ -2,9 +2,14 @@ using UnityEngine;
 
 public interface ITamagotchiPresenter
 {
-    void UpdateView();
-    void Feed(int amount);
-    void Play(int amount);
-    void Sleep(int amount);
-    void Clean(int amount);
+    void Feed(float amount);
+    void Play(float amount);
+    void Sleep(float amount);
+    void Clean(float amount);
+    
+    void UpdateSatiety(float satiety, int time);
+    void UpdateHappiness(float happiness, int time);
+    void UpdateEnergy(float energy, int time);
+    void UpdateHygiene(float hygiene, int time);
+    void Load();
 }

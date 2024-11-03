@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     
     private TamagotchiPresenter _tamagotchiPresenter;
+    private GamePresenter _gamePresenter;
 
     private void Awake()
     {
@@ -35,13 +36,15 @@ public class GameManager : MonoBehaviour
         
         var gameModel = new GameModel();
         var gameView = FindFirstObjectByType<GameView>();
-        var gamePresenter = new GamePresenter(saveSystem, gameView, gameModel);
+        _gamePresenter = new GamePresenter(saveSystem, gameView, gameModel);
         
-        gameView.SetPresenter(gamePresenter);
+        _gamePresenter.Load();
+        gameView.SetPresenter(_gamePresenter);
     }
 
     private void OnDisable()
     {
         _tamagotchiPresenter.Dispose();
+        _gamePresenter.Dispose();
     }
 }

@@ -41,7 +41,7 @@ public class SaveSystem
         return CrazySDK.Data.GetFloat("Hygiene");
     }
     
-    public float LoadTime()
+    public int LoadTime()
     {
         return CrazySDK.Data.GetInt("Time");
     }

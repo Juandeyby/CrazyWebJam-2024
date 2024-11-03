@@ -17,6 +17,27 @@ namespace _App._MainGame.Scripts.Presenter
             _gameModel = gameModel;
             _saveSystem = saveSystem;
             _gameView = gameView;
+            
+            TimerService.Instance.OnTimePerSecond += UpdateTime;
+        }
+        
+        public void UpdateTime()
+        {
+            _gameModel.Time++;
+            _saveSystem.SaveTime(_gameModel.Time);
+            _gameView.UpdateTime(_gameModel.Time);
+            OnTimeUpdated?.Invoke();
+        }
+        
+        public void Load()
+        {
+            _gameModel.Time = _saveSystem.LoadTime();
+            _gameView.UpdateTime(_gameModel.Time);
+        }
+        
+        public void Dispose()
+        {
+            TimerService.Instance.OnTimePerSecond -= UpdateTime;
         }
     }
 }

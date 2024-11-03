@@ -17,10 +17,10 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     
     private void UpdateAttributes()
     {
-        UpdateSatiety(0.01f);
-        UpdateHappiness(0.01f);
-        UpdateEnergy(0.01f);
-        UpdateHygiene(0.01f);
+        UpdateSatiety(0.1f);
+        UpdateHappiness(0.07f);
+        UpdateEnergy(0.04f);
+        UpdateHygiene(0.1f);
         UpdateView();
     }
     

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a13bd6781cbd72a478bd9854920f7c13
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 144436
+  packageName: Slime Rabbit
+  packageVersion: 1.0
+  assetPath: Assets/amusedART/SlimeRabbit/Sc_AniTest.cs
+  uploadId: 306151

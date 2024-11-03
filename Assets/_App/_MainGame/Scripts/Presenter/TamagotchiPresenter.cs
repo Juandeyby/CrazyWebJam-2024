@@ -11,6 +11,14 @@ public class TamagotchiPresenter : ITamagotchiPresenter
         _tamagotchiView = tamagotchiView;
     }
     
+    public void UpdateView()
+    {
+        _tamagotchiView.UpdateHunger(_tamagotchiModel.Hunger);
+        _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
+        _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
+        _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
+    }
+    
     public void Feed(int amount)
     {
         _tamagotchiModel.Hunger += Mathf.Clamp(amount, 0, 100);

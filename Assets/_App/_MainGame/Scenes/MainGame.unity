@@ -633,7 +633,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 85019513}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe94f6c70d5483844974f3b0164452ae, type: 3}
+  m_Script: {fileID: 11500000, guid: fd091f656d5fc1e40a8a80fd501183e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _satietyBar: {fileID: 393076488}
@@ -3150,7 +3150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 723071289}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bda895c65e214fa6bf8ce003e0f00f5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 03c84d36f248ad240afa7b1d7ea060ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 1446211924}

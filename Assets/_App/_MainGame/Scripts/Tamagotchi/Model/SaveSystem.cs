@@ -14,47 +14,27 @@ public class SaveSystem
             tamagotchiModel.Hygiene = 50;
             return tamagotchiModel;
         }
-        tamagotchiModel.Satiety = LoadHunger();
-        tamagotchiModel.Happiness = LoadHappiness();
-        tamagotchiModel.Energy = LoadEnergy();
-        tamagotchiModel.Hygiene = LoadHygiene();
-        return tamagotchiModel;
+        return LoadTamagotchiFromJson();
     }
     
-    public float LoadHunger()
+    public void SaveTamagotchi(TamagotchiModel tamagotchiModel)
     {
+        var json = JsonUtility.ToJson(tamagotchiModel);
 #if UNITY_EDITOR
-        return PlayerPrefs.GetFloat("Satiety");
+        PlayerPrefs.SetString("Tamagotchi", json);
 #else
-        return CrazySDK.Data.GetFloat("Satiety");
+        CrazySDK.Data.SetString("Tamagotchi", json);
 #endif
     }
     
-    public float LoadHappiness()
+    public TamagotchiModel LoadTamagotchiFromJson()
     {
 #if UNITY_EDITOR
-        return PlayerPrefs.GetFloat("Happiness");
+        var json = PlayerPrefs.GetString("Tamagotchi");
 #else
-        return CrazySDK.Data.GetFloat("Happiness");
+        var json = CrazySDK.Data.GetString("Tamagotchi");
 #endif
-    }
-    
-    public float LoadEnergy()
-    {
-#if UNITY_EDITOR
-        return PlayerPrefs.GetFloat("Energy");
-#else
-        return CrazySDK.Data.GetFloat("Energy");
-#endif
-    }
-    
-    public float LoadHygiene()
-    {
-#if UNITY_EDITOR
-        return PlayerPrefs.GetFloat("Hygiene");
-#else
-        return CrazySDK.Data.GetFloat("Hygiene");
-#endif
+        return JsonUtility.FromJson<TamagotchiModel>(json);
     }
     
     public int LoadTime()
@@ -66,42 +46,6 @@ public class SaveSystem
 #endif
     }
     
-    public void SaveHunger(float hunger)
-    {
-#if UNITY_EDITOR
-        PlayerPrefs.SetFloat("Satiety", hunger);
-#else
-        CrazySDK.Data.SetFloat("Satiety", hunger);
-#endif
-    }
-    
-    public void SaveHappiness(float happiness)
-    {
-#if UNITY_EDITOR
-        PlayerPrefs.SetFloat("Happiness", happiness);
-#else
-        CrazySDK.Data.SetFloat("Happiness", happiness);
-#endif
-    }
-    
-    public void SaveEnergy(float energy)
-    {
-#if UNITY_EDITOR
-        PlayerPrefs.SetFloat("Energy", energy);
-#else
-        CrazySDK.Data.SetFloat("Energy", energy);
-#endif
-    }  
-    
-    public void SaveHygiene(float hygiene)
-    {
-#if UNITY_EDITOR
-        PlayerPrefs.SetFloat("Hygiene", hygiene);
-#else
-        CrazySDK.Data.SetFloat("Hygiene", hygiene);
-#endif
-    }
-    
     public void SaveTime(int time)
     {
 #if UNITY_EDITOR
@@ -110,18 +54,22 @@ public class SaveSystem
         CrazySDK.Data.SetInt("Time", time);
 #endif
     }
-
-    private bool HasPlayedBefore()
+    
+    public bool HasPlayedBefore()
     {
 #if UNITY_EDITOR
-        return PlayerPrefs.HasKey("Satiety");
+        return PlayerPrefs.HasKey("Tamagotchi");
 #else
-        return CrazySDK.Data.HasKey("Satiety");
+        return CrazySDK.Data.HasKey("Tamagotchi");
 #endif
     }
     
     public void DeleteAll()
     {
+#if UNITY_EDITOR
+        PlayerPrefs.DeleteAll();
+#else
         CrazySDK.Data.DeleteAll();
+#endif
     }
 }

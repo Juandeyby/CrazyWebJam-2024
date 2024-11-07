@@ -5,46 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f806edf-199c-428a-a244-a94217ce6c66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/Model/GameModel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/Model/GameModel.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/Presenter/GamePresenter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/Presenter/GamePresenter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/Presenter/IGamePresenter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/Presenter/IGamePresenter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/View/GameView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/View/GameView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/View/IGameView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Game/View/IGameView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/GameModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/GameModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/SaveSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/SaveSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/TamagotchiModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/TamagotchiModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/GamePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/GamePresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/IGamePresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/IGamePresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/ITamagotchiPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/ITamagotchiPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/TamagotchiPresenter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/TamagotchiPresenter.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/SaveSystem.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/SaveSystem.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/TamagotchiModel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/TamagotchiModel.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/ITamagotchiPresenter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/ITamagotchiPresenter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/TamagotchiPresenter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/TamagotchiPresenter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/ITamagotchiView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/ITamagotchiView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/TamagotchiView.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/TamagotchiView.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/GameView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/GameView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/IGameView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/IGameView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/ITamagotchiView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/ITamagotchiView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/TamagotchiView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/TamagotchiView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/Model/ItemModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CrazyWebJam-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CrazyWebJam-2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/Item Touch Button (LeanButton).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/Item Touch Button (LeanButton).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scenes/MainGame.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/Item.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/Item.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/Model/ItemModel.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/ItemBanana.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/ItemBanana.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemConfiguration.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemConfiguration.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemConfiguration.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemFactory.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/SaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/SaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/TamagotchiModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/TamagotchiModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/TamagotchiPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/TamagotchiPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,18 +38,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/Item.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/GameModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Model/TamagotchiModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/ITamagotchiPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Presenter/TamagotchiPresenter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/Item.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/ScriptableObjects/ItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/Model/ItemModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/ITamagotchiView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/View/TamagotchiView.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -76,19 +51,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev-jd",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/items&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\Unity\6000.0.23f1\Editor\Unity.exe" />
@@ -139,6 +114,8 @@
       <workItem from="1730639810871" duration="19337000" />
       <workItem from="1730766474392" duration="4862000" />
       <workItem from="1730852733515" duration="1604000" />
+      <workItem from="1730943167205" duration="4436000" />
+      <workItem from="1730986749233" duration="5768000" />
     </task>
     <servers />
   </component>

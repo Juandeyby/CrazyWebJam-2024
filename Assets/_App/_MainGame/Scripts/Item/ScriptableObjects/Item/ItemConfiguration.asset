@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8ffd5bfaa86f744916a93ad025d605, type: 3}
   m_Name: ItemConfiguration
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: -1973771123081364532, guid: 8b034367a33ff8e46b0756d56f721764, type: 3}
+  uiItems:
+  - {fileID: 6543209327623843270, guid: 8195938dae4e715479e01dfa4321f169, type: 3}
+  gameItems:
+  - {fileID: 7173322582143604363, guid: bcbe4b334f23d0a4592c122e768a04d4, type: 3}

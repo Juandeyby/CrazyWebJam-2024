@@ -35,28 +35,28 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     public void Feed(float amount)
     {
         _tamagotchiModel.Satiety += Mathf.Clamp(amount, 0, 100);
-        _saveSystem.SaveHunger(_tamagotchiModel.Satiety);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateSatiety(_tamagotchiModel.Satiety);
     }
 
     public void Play(float amount)
     {
         _tamagotchiModel.Happiness += Mathf.Clamp(amount, 0, 100);
-        _saveSystem.SaveHappiness(_tamagotchiModel.Happiness);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
     }
 
     public void Sleep(float amount)
     {
         _tamagotchiModel.Energy += Mathf.Clamp(amount, 0, 100);
-        _saveSystem.SaveEnergy(_tamagotchiModel.Energy);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
     }
 
     public void Clean(float amount)
     {
         _tamagotchiModel.Hygiene += Mathf.Clamp(amount, 0, 100);
-        _saveSystem.SaveHygiene(_tamagotchiModel.Hygiene);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
     }
 
@@ -64,7 +64,7 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     {
         var satietyValue = _tamagotchiModel.Satiety - satiety * time;
         _tamagotchiModel.Satiety = Mathf.Clamp(satietyValue, 0, 100);
-        _saveSystem.SaveHunger(_tamagotchiModel.Satiety);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateSatiety(_tamagotchiModel.Satiety);
     }
 
@@ -72,7 +72,7 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     {
         var happinessValue = _tamagotchiModel.Happiness - happiness * time;
         _tamagotchiModel.Happiness = Mathf.Clamp(happinessValue, 0, 100);
-        _saveSystem.SaveHappiness(_tamagotchiModel.Happiness);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
     }
 
@@ -80,7 +80,7 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     {
         var energyValue = _tamagotchiModel.Energy - energy * time;
         _tamagotchiModel.Energy = Mathf.Clamp(energyValue, 0, 100);
-        _saveSystem.SaveEnergy(_tamagotchiModel.Energy);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
     }
 
@@ -88,7 +88,7 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     {
         var hygieneValue = _tamagotchiModel.Hygiene - hygiene * time;
         _tamagotchiModel.Hygiene = Mathf.Clamp(hygieneValue, 0, 100);
-        _saveSystem.SaveHygiene(_tamagotchiModel.Hygiene);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
     }
 

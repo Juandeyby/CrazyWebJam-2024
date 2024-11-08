@@ -65,10 +65,23 @@ public class TamagotchiView : MonoBehaviour, ITamagotchiView
         _tamagotchiPresenter.BuyItem(itemId.Value, itemId.Price);
     }
     
+    public void ConsumeItem(ItemId itemId)
+    {
+        _tamagotchiPresenter.ConsumeItem(itemId);
+    }
+    
     #endregion
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Item"))
+        {
+            var item = other.GetComponent<Item>();
+            if (item != null)
+            {
+                ConsumeItem(item.ItemId);
+                Destroy(other.gameObject);
+            }
+        }
     }
 }

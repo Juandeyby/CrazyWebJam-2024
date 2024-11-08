@@ -10,4 +10,5 @@ public interface ITamagotchiView
    void UpdateInventory(ItemModel[] items);
    
    void BuyItem(ItemId itemId);
+   void ConsumeItem(ItemId itemId);
 }

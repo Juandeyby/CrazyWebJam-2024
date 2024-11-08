@@ -18,7 +18,7 @@ public class TamagotchiModel
         Happiness = 50;
         Energy = 50;
         Hygiene = 50;
-        Coins = 100;
+        Coins = 1000;
         Items = new List<ItemModel>();
     }
     

@@ -2,12 +2,13 @@ using UnityEngine;
 
 public interface ITamagotchiPresenter
 {
-    void Feed(float amount);
-    void Play(float amount);
-    void Sleep(float amount);
-    void Clean(float amount);
+    void Feed(ItemId itemId);
+    void Play(ItemId itemId);
+    void Sleep(ItemId itemId);
+    void Clean(ItemId itemId);
     bool BuyItem(string itemId, int price);
     void SpawnItem(string itemId);
+    void ConsumeItem(ItemId itemId);
     
     void UpdateSatiety(float satiety, int time);
     void UpdateHappiness(float happiness, int time);

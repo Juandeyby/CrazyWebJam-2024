@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1357
   m_ShowMode: 4
-  m_Title: Animator
+  m_Title: Inspector
   m_RootView: {fileID: 11}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -241,7 +241,7 @@ MonoBehaviour:
   - {fileID: 18}
   - {fileID: 24}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 2
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2053,9 +2053,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Lighting\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 2613
+    x: 2634
     y: 79
-    width: 826
+    width: 805
     height: 1275
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -2179,7 +2179,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_App/_MainGame/Textures/Icons
+    - Assets/Thirdparty/Fantasy Skybox FREE/Panoramics/FS002
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -2189,16 +2189,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_App/_MainGame/Textures/Icons
+  - Assets/Thirdparty/Fantasy Skybox FREE/Panoramics/FS002
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\GitHub\CrazyWebJam-2024
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 34c30000
-    m_LastClickedID: 49972
-    m_ExpandedIDs: 0000000092c3000094c3000096c3000098c300009ac300009cc300009ec30000a0c30000a2c30000a4c30000a6c30000a8c30000aac30000acc30000aec30000b0c30000b2c30000b4c30000b6c30000b8c30000bac30000bcc30000bec30000c0c30000c2c30000c4c30000c6c30000c8c30000cac30000ccc30000cec30000d0c30000d2c30000
+    m_SelectedIDs: 04ec0000
+    m_LastClickedID: 60420
+    m_ExpandedIDs: 000000000aba00000cba00000eba000010ba000012ba000014ba000016ba000018ba00001aba00001cba00001eba000020ba000022ba000024ba000026ba000028ba00002aba00002cba00002eba000030ba000032ba000034ba000036ba000038ba00003aba00003cba00003eba000040ba000042ba000044ba000046ba000048ba00004aba00004cba0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2227,7 +2227,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000092c3000094c3000096c3000098c300009ac300009cc300009ec30000a0c30000a2c30000a4c30000a6c30000a8c30000aac30000acc30000aec30000b0c30000b2c30000b4c30000b6c30000b8c30000bac30000bcc30000bec30000c0c30000c2c30000c4c30000c6c30000c8c30000cac30000ccc30000cec30000d0c30000d2c30000
+    m_ExpandedIDs: 000000000aba00000cba00000eba000010ba000012ba000014ba000016ba000018ba00001aba00001cba00001eba000020ba000022ba000024ba000026ba000028ba00002aba00002cba00002eba000030ba000032ba000034ba000036ba000038ba00003aba00003cba00003eba000040ba000042ba000044ba000046ba000048ba00004aba00004cba0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2256,7 +2256,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000106e00008a710000b07400001e720000a4720000c6820000a8720000326cfeff86ab0000a6820100a8820100fefd00002ab50000a694000066b200007aba000000000000d4e80000c447000068870200108c0200628b0200348b0200148c020006c400009c0301000646010002460100e0f9000082b20000
+    m_ExpandedInstanceIDs: c6230000106e00008a710000b07400001e720000a4720000c6820000a8720000326cfeff86ab0000a6820100a8820100fefd00002ab50000a694000066b200007aba0000d4e80000c447000068870200108c0200628b0200348b0200148c020006c400009c0301000646010002460100e0f9000082b2000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2375,7 +2375,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4e70fffff89affffb6a8ffffd0a8ffffe4a8ffff9eb8ffffa2b8ffffacb8ffff70bdffff86bdffff88bdfffff6fafffff0b0000090b100001ab20000
+      m_ExpandedIDs: 62ecffffe4f7fffff6faffff28b100003ab1000058b10000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -2937,9 +2937,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 471.43808, y: 203.89465, z: -30.10435}
+    m_Target: {x: 0.608516, y: 0.5740301, z: 0.7788071}
     speed: 2
-    m_Value: {x: 1.046693, y: 1.1734113, z: -0.7754011}
+    m_Value: {x: 0.608516, y: 0.5740301, z: 0.7788071}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2985,13 +2985,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.11107025, y: 0.015502742, z: -0.0017284979, w: -0.9937258}
+    m_Target: {x: -0.249046, y: 0.6225682, z: -0.2186876, w: -0.70896894}
     speed: 2
-    m_Value: {x: -0.15915321, y: 0.35320815, z: -0.06109977, w: -0.9199163}
+    m_Value: {x: -0.24904598, y: 0.62256813, z: -0.21868758, w: -0.7089689}
   m_Size:
-    m_Target: 445.9269
+    m_Target: 2.5500064
     speed: 2
-    m_Value: 2.6172805
+    m_Value: 2.5500064
   m_Ortho:
     m_Target: 0
     speed: 2

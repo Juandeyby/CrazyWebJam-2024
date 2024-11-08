@@ -14,6 +14,14 @@ public class ItemId : ScriptableObject
  
     [SerializeField] private ItemType _type;
     public ItemType Type => _type;
+    [SerializeField] private int _satiety;
+    public int Satiety => _satiety;
+    [SerializeField] private int _happiness;
+    public int Happiness => _happiness;
+    [SerializeField] private int _energy;
+    public int Energy => _energy;
+    [SerializeField] private int _hygiene;
+    public int Hygiene => _hygiene;
 }
 
 public enum ItemType

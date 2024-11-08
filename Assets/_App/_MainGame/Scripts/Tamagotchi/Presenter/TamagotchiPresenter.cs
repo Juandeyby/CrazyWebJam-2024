@@ -23,10 +23,10 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     
     private void UpdateAttributes()
     {
-        UpdateSatiety(0.1f);
-        UpdateHappiness(0.07f);
-        UpdateEnergy(0.04f);
-        UpdateHygiene(0.1f);
+        UpdateSatiety(0.2f);
+        UpdateHappiness(0.001f);
+        UpdateEnergy(0.001f);
+        UpdateHygiene(0.001f);
     }
     
     private void Load()
@@ -50,30 +50,30 @@ public class TamagotchiPresenter : ITamagotchiPresenter
         _itemUiStoreSpawner.UpdateStore();
     }
     
-    public void Feed(float amount)
+    public void Feed(ItemId itemId)
     {
-        _tamagotchiModel.Satiety += Mathf.Clamp(amount, 0, 100);
+        _tamagotchiModel.Satiety += Mathf.Clamp(itemId.Satiety, 0, 100);
         _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateSatiety(_tamagotchiModel.Satiety);
     }
 
-    public void Play(float amount)
+    public void Play(ItemId itemId)
     {
-        _tamagotchiModel.Happiness += Mathf.Clamp(amount, 0, 100);
+        _tamagotchiModel.Happiness += Mathf.Clamp(itemId.Happiness, 0, 100);
         _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
     }
 
-    public void Sleep(float amount)
+    public void Sleep(ItemId itemId)
     {
-        _tamagotchiModel.Energy += Mathf.Clamp(amount, 0, 100);
+        _tamagotchiModel.Energy += Mathf.Clamp(itemId.Energy, 0, 100);
         _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
     }
 
-    public void Clean(float amount)
+    public void Clean(ItemId itemId)
     {
-        _tamagotchiModel.Hygiene += Mathf.Clamp(amount, 0, 100);
+        _tamagotchiModel.Hygiene += Mathf.Clamp(itemId.Hygiene, 0, 100);
         _saveSystem.SaveTamagotchi(_tamagotchiModel);
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
     }
@@ -147,6 +147,22 @@ public class TamagotchiPresenter : ITamagotchiPresenter
     public void UpdateItems(ItemModel[] items)
     {
         _tamagotchiView.UpdateInventory(items);
+    }
+
+    public void ConsumeItem(ItemId itemId)
+    {
+        switch(itemId.Type)
+        {
+            case ItemType.Food:
+                Feed(itemId);
+                break;
+            case ItemType.Toys:
+                Play(itemId);
+                break;
+            case ItemType.Hygiene:
+                Clean(itemId);
+                break;
+        }
     }
 
     public void Dispose()

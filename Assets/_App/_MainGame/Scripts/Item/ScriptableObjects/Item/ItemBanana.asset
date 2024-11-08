@@ -15,3 +15,8 @@ MonoBehaviour:
   _value: ItemBanana
   _price: 10
   _name: Banana
+  _type: 0
+  _satiety: 10
+  _happiness: 0
+  _energy: 0
+  _hygiene: 0

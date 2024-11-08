@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f8ffd5bfaa86f744916a93ad025d605, type: 3}
   m_Name: ItemConfiguration
   m_EditorClassIdentifier: 
-  uiItems:
+  itemUiStore:
   - {fileID: 6543209327623843270, guid: 8195938dae4e715479e01dfa4321f169, type: 3}
-  gameItems:
+  itemUiInventory:
+  - {fileID: 2783080845379446630, guid: a0a6ca683bc45b14297166deb4a4b449, type: 3}
+  itemGame:
   - {fileID: 7173322582143604363, guid: bcbe4b334f23d0a4592c122e768a04d4, type: 3}

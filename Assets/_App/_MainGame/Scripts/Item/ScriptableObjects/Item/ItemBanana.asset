@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: ItemBanana
   m_EditorClassIdentifier: 
   _value: ItemBanana
+  _price: 10
+  _name: Banana

@@ -1,14 +1,16 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+[Serializable]
 public class TamagotchiModel
 {
-    public float Satiety { get; set; }
-    public float Happiness { get; set; }
-    public float Energy { get; set; }
-    public float Hygiene { get; set; }
-    public int Coins { get; set; }
-    public List<Item> Items { get; set; }
+    public float Satiety;
+    public float Happiness;
+    public float Energy;
+    public float Hygiene;
+    public int Coins;
+    public List<ItemModel> Items;
     
     public TamagotchiModel()
     {
@@ -17,11 +19,33 @@ public class TamagotchiModel
         Energy = 50;
         Hygiene = 50;
         Coins = 100;
-        Items = new List<Item>();
+        Items = new List<ItemModel>();
     }
     
-    public void AddItem(Item item)
+    public void AddItem(string itemId)
     {
-        Items.Add(item);
+        if (Items.Exists(i => i.Id == itemId))
+        {
+            var itemModel = Items.Find(i => i.Id == itemId);
+            itemModel.Amount++;
+        }
+        else
+        {
+            var item = new ItemModel {Id = itemId, Amount = 1};
+            Items.Add(item);
+        }
+    }
+ 
+    public void RemoveItem(string itemId)
+    {
+        if (Items.Exists(i => i.Id == itemId))
+        {
+            var itemModel = Items.Find(i => i.Id == itemId);
+            itemModel.Amount--;
+            if (itemModel.Amount <= 0)
+            {
+                Items.Remove(itemModel);
+            }
+        }
     }
 }

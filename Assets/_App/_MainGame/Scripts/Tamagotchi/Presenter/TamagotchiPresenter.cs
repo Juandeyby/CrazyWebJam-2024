@@ -1,18 +1,24 @@
+using _App._MainGame.Scripts.Item.Presenter;
+using _App._MainGame.Scripts.Item.View;
 using UnityEngine;
 
 public class TamagotchiPresenter : ITamagotchiPresenter
 {
     private TamagotchiModel _tamagotchiModel;
     private ITamagotchiView _tamagotchiView;
+    private IItemUiStoreSpawner _itemUiStoreSpawner;
     private SaveSystem _saveSystem;
     
-    public TamagotchiPresenter(SaveSystem saveSystem, ITamagotchiView tamagotchiView, TamagotchiModel tamagotchiModel)
+    public TamagotchiPresenter(SaveSystem saveSystem, ITamagotchiView tamagotchiView,
+        TamagotchiModel tamagotchiModel, IItemUiStoreSpawner itemUiStoreSpawner)
     {
         _tamagotchiModel = tamagotchiModel;
         _saveSystem = saveSystem;
         _tamagotchiView = tamagotchiView;
+        _itemUiStoreSpawner = itemUiStoreSpawner;
         
         TimerService.Instance.OnTimePerSecond += UpdateAttributes;
+        Load();
     }
     
     private void UpdateAttributes()
@@ -21,15 +27,27 @@ public class TamagotchiPresenter : ITamagotchiPresenter
         UpdateHappiness(0.07f);
         UpdateEnergy(0.04f);
         UpdateHygiene(0.1f);
-        UpdateView();
     }
     
-    private void UpdateView()
+    private void Load()
+    {
+        UpdateAttributesView();
+        UpdateMarketView();
+    }
+    
+    private void UpdateAttributesView()
     {
         _tamagotchiView.UpdateSatiety(_tamagotchiModel.Satiety);
         _tamagotchiView.UpdateHappiness(_tamagotchiModel.Happiness);
         _tamagotchiView.UpdateEnergy(_tamagotchiModel.Energy);
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
+    }
+    
+    private void UpdateMarketView()
+    {
+        _tamagotchiView.UpdateCoins(_tamagotchiModel.Coins);
+        _tamagotchiView.UpdateInventory(_tamagotchiModel.Items.ToArray());
+        _itemUiStoreSpawner.UpdateStore();
     }
     
     public void Feed(float amount)
@@ -60,6 +78,35 @@ public class TamagotchiPresenter : ITamagotchiPresenter
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
     }
 
+    public bool BuyItem(string itemId, int price)
+    {
+        if (!CanBuy(price)) return false;
+        SpendCoins(price);
+        _tamagotchiModel.AddItem(itemId);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
+        _tamagotchiView.UpdateCoins(_tamagotchiModel.Coins);
+        _tamagotchiView.UpdateInventory(_tamagotchiModel.Items.ToArray());
+        _itemUiStoreSpawner.UpdateStore();
+        return true;
+    }
+    
+    private bool CanBuy(int price)
+    {
+        return _tamagotchiModel.Coins >= price;
+    }
+    
+    private void SpendCoins(int price)
+    {
+        _tamagotchiModel.Coins -= price;
+    }
+    
+    public void SpawnItem(string itemId)
+    {
+        _tamagotchiModel.RemoveItem(itemId);
+        _saveSystem.SaveTamagotchi(_tamagotchiModel);
+        _tamagotchiView.UpdateInventory(_tamagotchiModel.Items.ToArray());
+    }
+    
     public void UpdateSatiety(float satiety, int time = 1)
     {
         var satietyValue = _tamagotchiModel.Satiety - satiety * time;
@@ -92,14 +139,19 @@ public class TamagotchiPresenter : ITamagotchiPresenter
         _tamagotchiView.UpdateHygiene(_tamagotchiModel.Hygiene);
     }
 
-    public void Load()
+    public void UpdateCoins(int coins)
     {
-        _tamagotchiModel = _saveSystem.LoadTamagotchi();
-        UpdateView();
+        _tamagotchiView.UpdateCoins(coins);
     }
-    
+
+    public void UpdateItems(ItemModel[] items)
+    {
+        _tamagotchiView.UpdateInventory(items);
+    }
+
     public void Dispose()
     {
         TimerService.Instance.OnTimePerSecond -= UpdateAttributes;
     }
+
 }

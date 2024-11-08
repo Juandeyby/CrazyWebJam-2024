@@ -3,16 +3,12 @@ using UnityEngine;
 
 public class SaveSystem
 {
+    private readonly string Tamagotchi = "Tamagotchi";
     public TamagotchiModel LoadTamagotchi()
     {
-        var tamagotchiModel = new TamagotchiModel();
         if (HasPlayedBefore() == false)
         {
-            tamagotchiModel.Satiety = 50;
-            tamagotchiModel.Happiness = 50;
-            tamagotchiModel.Energy = 50;
-            tamagotchiModel.Hygiene = 50;
-            return tamagotchiModel;
+            return new TamagotchiModel();
         }
         return LoadTamagotchiFromJson();
     }
@@ -21,18 +17,18 @@ public class SaveSystem
     {
         var json = JsonUtility.ToJson(tamagotchiModel);
 #if UNITY_EDITOR
-        PlayerPrefs.SetString("Tamagotchi", json);
+        PlayerPrefs.SetString(Tamagotchi, json);
 #else
-        CrazySDK.Data.SetString("Tamagotchi", json);
+        CrazySDK.Data.SetString(Tamagotchi, json);
 #endif
     }
     
     public TamagotchiModel LoadTamagotchiFromJson()
     {
 #if UNITY_EDITOR
-        var json = PlayerPrefs.GetString("Tamagotchi");
+        var json = PlayerPrefs.GetString(Tamagotchi);
 #else
-        var json = CrazySDK.Data.GetString("Tamagotchi");
+        var json = CrazySDK.Data.GetString(Tamagotchi);
 #endif
         return JsonUtility.FromJson<TamagotchiModel>(json);
     }
@@ -58,9 +54,9 @@ public class SaveSystem
     public bool HasPlayedBefore()
     {
 #if UNITY_EDITOR
-        return PlayerPrefs.HasKey("Tamagotchi");
+        return PlayerPrefs.HasKey(Tamagotchi);
 #else
-        return CrazySDK.Data.HasKey("Tamagotchi");
+        return CrazySDK.Data.HasKey(Tamagotchi);
 #endif
     }
     

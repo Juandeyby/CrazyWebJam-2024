@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300020, guid: 37607ec1aab56e349af84a980f685a4b, type: 3}
+  m_Sprite: {fileID: 21300056, guid: 37607ec1aab56e349af84a980f685a4b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -873,10 +873,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1766754379953774733}
   - component: {fileID: 2452661823761086488}
-  - component: {fileID: 2783080845379446630}
   - component: {fileID: 8650287552970042024}
+  - component: {fileID: 5150848238855017335}
   m_Layer: 5
-  m_Name: ItemBanana Inventary Touch Button (LeanButton)
+  m_Name: ItemBread Inventary Touch Button (LeanButton) 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1006,19 +1006,6 @@ MonoBehaviour:
   onClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2783080845379446630
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9062688694390540956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7099548f1dd12d049bf061a5625b4a7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _id: {fileID: 11400000, guid: db4a4fc6cfa0f774b8a0f94180e8af7c, type: 2}
 --- !u!114 &8650287552970042024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,3 +1019,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemAmountText: {fileID: 2234952047473994377}
+--- !u!114 &5150848238855017335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9062688694390540956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a0800ee816415d97badadee2f98429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: {fileID: 11400000, guid: 69b5f33e69200f849aa72031792913a8, type: 2}

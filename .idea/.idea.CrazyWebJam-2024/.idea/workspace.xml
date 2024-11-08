@@ -5,23 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f806edf-199c-428a-a244-a94217ce6c66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemAvocado.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemAvocado.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemBread.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemBread.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemBurger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemBurger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemCheese1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemCheese1.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemCheese2.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemCheese2.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemChicken.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemChicken.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemFries.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemFries.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemHotDog.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemHotDog.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemTacos.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemTacos.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemTomato.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemTomato.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CrazyWebJam-2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CrazyWebJam-2024/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/ItemBanana.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/ItemBanana.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/ItemBanana Inventary Touch Button (LeanButton).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/ItemBanana Inventary Touch Button (LeanButton).prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/ItemBanana StoreItem Touch Button (LeanButton).prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Prefabs/Items/ItemBanana StoreItem Touch Button (LeanButton).prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scenes/MainGame.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scenes/MainGame.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/ScriptableObjects/Item/ItemBanana.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/ScriptableObjects/Item/ItemBanana.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemId.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemId.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/TamagotchiModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Model/TamagotchiModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/ITamagotchiPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/ITamagotchiPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/TamagotchiPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/Presenter/TamagotchiPresenter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/ITamagotchiView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/ITamagotchiView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/TamagotchiView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Tamagotchi/View/TamagotchiView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/ScriptableObjects/Item/ItemConfiguration.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/ScriptableObjects/Item/ItemConfiguration.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemBanana.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemBanana.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-6000.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +51,12 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/Model/ItemModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/Item.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemCheese2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemGameSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemInventoryButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemStoreButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemTacos.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/Item/View/ItemUiInventorySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_App/_MainGame/Scripts/SoundManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -49,6 +64,9 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2oJ8mcBQ13SwR9bgAUFUMBeDtnc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -120,7 +138,7 @@
       <workItem from="1730943167205" duration="4436000" />
       <workItem from="1730986749233" duration="7215000" />
       <workItem from="1731017223351" duration="17140000" />
-      <workItem from="1731101169898" duration="1768000" />
+      <workItem from="1731101169898" duration="3973000" />
     </task>
     <servers />
   </component>

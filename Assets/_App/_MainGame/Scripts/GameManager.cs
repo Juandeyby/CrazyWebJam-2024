@@ -1,4 +1,5 @@
 using System;
+using _App._MainGame.Scripts.Item.Presenter;
 using _App._MainGame.Scripts.Presenter;
 using _App._MainGame.Scripts.View;
 using UnityEngine;
@@ -9,6 +10,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     
     private TamagotchiPresenter _tamagotchiPresenter;
+    private TamagotchiView _tamagotchiView;
+    public TamagotchiView TamagotchiView => _tamagotchiView;
+    
     private GamePresenter _gamePresenter;
 
     private void Awake()
@@ -27,18 +31,22 @@ public class GameManager : MonoBehaviour
     {
         var saveSystem = new SaveSystem();
         
-        var tamagotchiModel = new TamagotchiModel();
-        var tamagotchiView = FindFirstObjectByType<TamagotchiView>();
-        _tamagotchiPresenter = new TamagotchiPresenter(saveSystem, tamagotchiView, tamagotchiModel);
+        var tamagotchiModel = saveSystem.LoadTamagotchi();
         
-        _tamagotchiPresenter.Load();
-        tamagotchiView.SetPresenter(_tamagotchiPresenter);
+        var itemUiStoreSpawner = FindFirstObjectByType<ItemUiStoreSpawner>();
+        var itemPresenter = new ItemPresenter(tamagotchiModel, itemUiStoreSpawner);
+        itemUiStoreSpawner.SetPresenter(itemPresenter);
+        
+        _tamagotchiView = FindFirstObjectByType<TamagotchiView>();
+        _tamagotchiPresenter = new TamagotchiPresenter(saveSystem, _tamagotchiView, tamagotchiModel, itemUiStoreSpawner);
+        _tamagotchiView.SetPresenter(_tamagotchiPresenter);
+        
+        var itemUiInventorySpawner = FindFirstObjectByType<ItemUiInventorySpawner>();
+        itemUiInventorySpawner.SetPresenter(_tamagotchiPresenter);
         
         var gameModel = new GameModel();
         var gameView = FindFirstObjectByType<GameView>();
         _gamePresenter = new GamePresenter(saveSystem, gameView, gameModel);
-        
-        _gamePresenter.Load();
         gameView.SetPresenter(_gamePresenter);
     }
 

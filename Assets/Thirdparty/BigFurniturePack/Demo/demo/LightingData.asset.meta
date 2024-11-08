@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5e8dc5c17edc4204e9065ab951f936bd
+timeCreated: 1513183892
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 25800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 7717
+  packageName: Big Furniture Pack
+  packageVersion: 1.3
+  assetPath: Assets/Thirdparty/BigFurniturePack/Demo/demo/LightingData.asset
+  uploadId: 218289

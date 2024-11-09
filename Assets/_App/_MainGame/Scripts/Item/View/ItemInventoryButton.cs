@@ -6,6 +6,8 @@ using UnityEngine.Events;
 
 public class ItemInventoryButton : MonoBehaviour
 {
+    [SerializeField] private Sprite _icon;
+    [SerializeField] private TMP_Text _nameText;
     [SerializeField] private TMP_Text _itemAmountText;
     
     private LeanButton _button;
@@ -17,6 +19,8 @@ public class ItemInventoryButton : MonoBehaviour
         _button = GetComponent<LeanButton>();
         _item = GetComponent<Item>();
         _button.OnClick.AddListener(OnButtonClick);
+        
+        SetItem(_item.ItemId);
     }
 
     private void OnButtonClick()
@@ -37,5 +41,11 @@ public class ItemInventoryButton : MonoBehaviour
     public void AddListener(UnityAction action)
     {
         _button.OnClick.AddListener(action);
+    }
+    
+    private void SetItem(ItemId itemId)
+    {
+        _icon = itemId.Icon;
+        _nameText.text = itemId.Name;
     }
 }

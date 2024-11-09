@@ -397,7 +397,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Banana
+  m_text: Tacos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1102,6 +1102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c76d9734c8284754cbddbc9ebd7cb295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _icon: {fileID: 21300050, guid: 37607ec1aab56e349af84a980f685a4b, type: 3}
+  _nameText: {fileID: 8925118289453387645}
+  _priceText: {fileID: 274711277264927948}
 --- !u!114 &6698590723717900112
 MonoBehaviour:
   m_ObjectHideFlags: 0

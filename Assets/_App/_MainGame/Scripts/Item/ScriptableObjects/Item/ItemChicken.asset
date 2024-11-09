@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 304f4e753e1419e4c9213da8bd3d32c2, type: 3}
-  m_Name: ItemChicklen
+  m_Name: ItemChicken
   m_EditorClassIdentifier: 
-  _value: ItemChicklen
+  _value: ItemChicken
   _price: 50
-  _name: Chicklen
+  _name: Chicken
   _type: 0
   _satiety: 40
   _happiness: 0
   _energy: 0
   _hygiene: 0
+  _icon: {fileID: 21300102, guid: 37607ec1aab56e349af84a980f685a4b, type: 3}
